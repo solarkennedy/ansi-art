@@ -1,6 +1,16 @@
-=== Comparison of tools
+# ANSI-art
 
-==== Converters
+My collection of tools for ANSI art work.
+
+## Contents
+
+Just some makefiles and junk.
+
+## Notes
+
+### Comparison of tools
+
+#### Converters
 
 * [util-say](https://github.com/maandree/util-say/): 
 Java tools to convert img to ponysay format, which is close. Good vertical
@@ -16,7 +26,7 @@ libcaca tool. Handles ANSI colors but uses all characters from the character set
 * aview: aalib tools only support black and white
 * jp2a: Converts jpeg to ascii. No extended symbols, limited color 
 
-==== Editors
+#### Editors
 
 * [pablodraw](http://picoe.ca/products/pablodraw/):
 Cross-platform. Feels like an advanced "paint" program
