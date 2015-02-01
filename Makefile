@@ -12,7 +12,7 @@ img2ponysay: sources
 
 
 print: img2ponysay
-	find -iname '*.out.png' | sort  -k 3 -t '/' | xargs -n 1 img2ponysay
+	find -iname '*.out.png' | sort  -k 3 -t '/' | xargs -n 1 img2ponysay | grep -v '\$$'
 
 clean:
 	make -C mascots clean

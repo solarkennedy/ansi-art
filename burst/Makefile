@@ -1,17 +1,21 @@
-OUTPUTS:= yelp_burst1.out.png yelp_burst2.out.png
+OUTPUTS:= yelp_burst1.out.png yelp_burst2.out.png yelp_burst3.out.png
 all: $(OUTPUTS)
 
-CONVERT_ARGS:=-resize 10%
+CONVERT_ARGS:=-trim +repage -fuzz 10% -transparent white -resize 10%
 
 yelp_burst1.png:
 	wget -O $@ http://www.fredhatfull.com/img/yelp_burst.png
 yelp_burst2.jpg:
 	wget -O $@ https://c1.staticflickr.com/5/4035/4208665825_4992916e78_m.jpg
+yelp_burst3.png:
+	wget -O $@ http://s3-media3.fl.yelpcdn.com/assets/srv0/www_pages/f63bfba55df0/assets/img/brand_guidelines/yelp-favicons.png
 
 yelp_burst1.out.png: yelp_burst1.png
 	convert $(CONVERT_ARGS) $< $@
 yelp_burst2.out.png: yelp_burst2.jpg
 	convert $(CONVERT_ARGS) $< $@
+yelp_burst3.out.png: yelp_burst3.png
+	convert -trim +repage -resize 40% $< $@
 
 clean:
 	rm *.out.png
