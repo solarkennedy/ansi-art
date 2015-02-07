@@ -8,6 +8,19 @@ Just some makefiles and junk.
 
 ## Notes
 
+I'm using img2ponysay to produce the outputs. It must be in your path,
+so I use this script in my path:
+
+```
+#!/bin/bash
+
+FILE=`readlink -f $1`
+cd /home/kyle/Projects/util-say
+./img2ponysay $FILE
+```
+
+So I can run img2ponysay from anywhere
+
 ### Comparison of tools
 
 #### Converters

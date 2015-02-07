@@ -5,10 +5,10 @@ print: $(OUTPUTS)
 
 all: $(OUTPUTS)
 
-operations.png:
-	./xcf2png operations.xcf
-search-infra.png:
-	./xcf2png search-infra.xcf
+operations.png: operations.xcf
+	./xcf2png $<
+search-infra.png: search-infra.png
+	./xcf2png $<
 
 operations.txt: operations.png
 	img2ponysay $<| grep -v '\$$' > $@
