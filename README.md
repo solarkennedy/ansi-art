@@ -19,7 +19,15 @@ cd /home/kyle/Projects/util-say
 ./img2ponysay $FILE
 ```
 
-So I can run img2ponysay from anywhere
+So I can run img2ponysay from anywhere.
+
+You do have to have it built of course:
+```
+sudo apt-get -y install openjdk-7-jdk
+git clone https://github.com/maandree/util-say/
+cd util-say
+make
+```
 
 ### Comparison of tools
 
