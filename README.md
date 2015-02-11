@@ -8,25 +8,17 @@ Just some makefiles and junk.
 
 ## Notes
 
-I'm using img2xterm to produce the outputs. It must be in your path,
-so I use this script in my path:
+I'm using img2xterm to produce the outputs. It must be in your path.
 
+Quickstart install:
 ```
-#!/bin/bash
-
-FILE=`readlink -f $1`
-cd /home/kyle/Projects/util-say
-./img2xterm $FILE
-```
-
-So I can run img2xterm from anywhere.
-
-You do have to have it built of course:
-```
-sudo apt-get -y install openjdk-7-jdk
-git clone https://github.com/maandree/util-say/
-cd util-say
+cd /tmp
+wget -O img2xterm.zip https://github.com/rossy/img2xterm/archive/master.zip
+unzip img2xterm.zip
+cd img2xterm-master
+sudo apt-get -y install libmagick++-dev
 make
+sudo make install
 ```
 
 ### Comparison of tools
