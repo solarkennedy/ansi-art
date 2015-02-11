@@ -33,6 +33,9 @@ make
 
 #### Converters
 
+* [img2xterm](https://github.com/rossy/img2xterm):
+C program, same kind of output as util-say. Good color palette detection and
+vertical and horizontal space utilization.
 * [util-say](https://github.com/maandree/util-say/): 
 Java tools to convert img to ponysay format, which is close. Good vertical
 and horizontal space utilization and color selection.

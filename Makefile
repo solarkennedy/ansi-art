@@ -1,4 +1,4 @@
-.PHONY: sources img2ponysay print all
+.PHONY: sources img2xterm print all
 
 all: print_motd
 
@@ -7,14 +7,14 @@ sources:
 	make -C mascots2 all
 	make -C burst all
 
-img2ponysay: sources
-	which img2ponysay || ( echo 'No img2ponysay in your path. Download from here: https://github.com/maandree/util-say/' && exit 1 )
+img2xterm: sources
+	which img2xterm || ( echo 'No img2xterm in your path. Download from here: https://github.com/rossy/img2xterm' && exit 1 )
 
 
-test_print: img2ponysay
-	find -iname '*.out.png' | sort  -k 3 -t '/' | xargs -n 1 img2ponysay | grep -v '\$$'
+test_print: img2xterm
+	find -iname '*.out.png' | sort  -k 3 -t '/' | xargs -n 1 img2xterm | grep -v '\$$'
 
-print_motd: img2ponysay
+print_motd: img2xterm
 	make -C motds print
 
 clean:
