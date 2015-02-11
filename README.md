@@ -8,7 +8,7 @@ Just some makefiles and junk.
 
 ## Notes
 
-I'm using img2ponysay to produce the outputs. It must be in your path,
+I'm using img2xterm to produce the outputs. It must be in your path,
 so I use this script in my path:
 
 ```
@@ -16,10 +16,10 @@ so I use this script in my path:
 
 FILE=`readlink -f $1`
 cd /home/kyle/Projects/util-say
-./img2ponysay $FILE
+./img2xterm $FILE
 ```
 
-So I can run img2ponysay from anywhere.
+So I can run img2xterm from anywhere.
 
 You do have to have it built of course:
 ```

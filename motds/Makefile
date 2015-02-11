@@ -13,7 +13,7 @@ search-infra.png: search-infra.png
 operations.txt: operations.png
 	img2xterm $<| grep -v '\$$' > $@
 search-infra.txt: search-infra.png
-	img2ponysay $<| grep -v '\$$' > $@
+	img2xterm $<| grep -v '\$$' > $@
 
 
 clean:
