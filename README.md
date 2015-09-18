@@ -31,6 +31,9 @@ vertical and horizontal space utilization.
 * [util-say](https://github.com/maandree/util-say/): 
 Java tools to convert img to ponysay format, which is close. Good vertical
 and horizontal space utilization and color selection.
+* [catimg](https://github.com/posva/catimg):
+C and Bash versions. Excellent color utilization. Only handles single large
+ansi pixels, limiting the vertical resolution.
 * [manytools](https://github.com/maandree/util-say/):
 Web-based, takes uploads and converts them to HTML. Not suitable
 for MOTD usage
