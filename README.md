@@ -34,7 +34,7 @@ and horizontal space utilization and color selection.
 * [catimg](https://github.com/posva/catimg):
 C and Bash versions. Excellent color utilization. Only handles single large
 ansi pixels, limiting the vertical resolution.
-* [manytools](https://github.com/maandree/util-say/):
+* [manytools](http://manytools.org/hacker-tools/convert-images-to-ascii-art/):
 Web-based, takes uploads and converts them to HTML. Not suitable
 for MOTD usage
 * [img-cat](https://github.com/saikobee/img-cat/):
